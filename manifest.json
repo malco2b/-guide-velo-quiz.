@@ -1,0 +1,12 @@
+{
+  "name": "Guide Vélo Quiz",
+  "short_name": "Guide Quiz",
+  "description": "Quiz de découverte à faire en groupe sur le parcours Les Moutiers, La Bernerie et Pornic.",
+  "lang": "fr-FR",
+  "start_url": "/-guide-velo-quiz./",
+  "scope": "/-guide-velo-quiz./",
+  "display": "standalone",
+  "background_color": "#46178f",
+  "theme_color": "#46178f",
+  "orientation": "portrait"
+}
