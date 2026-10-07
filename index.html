@@ -67,8 +67,9 @@ let DATA;
 try{DATA=JSON.parse(localStorage.getItem('guideQuizLiveData'))}catch(e){}
 if(!DATA||!DATA.routes) DATA=seed();
 // VERSION FINALE 08/10/2026 : force les photos locales des cinq étapes même
-// sur les appareils ayant déjà une ancienne sauvegarde.
-if(!localStorage.getItem('guideRoute0810FINALv11ALLPHOTOS')){DATA=seed();localStorage.setItem('guideRoute0810FINALv11ALLPHOTOS','1')}
+// sur les appareils ayant déjà une ancienne sauvegarde. Le numéro de version
+// est volontairement changé pour migrer aussi les appareils déjà ouverts.
+if(!localStorage.getItem('guideRoute0810FINALv12ALLPHOTOS')){DATA=seed();localStorage.setItem('guideRoute0810FINALv12ALLPHOTOS','1')}
 const save=()=>localStorage.setItem('guideQuizLiveData',JSON.stringify(DATA));
 const COLORS=['red','blue','yellow','green'],SHAPES=['▲','◆','●','■'];
 let UI={view:'home',rid:null,pin:null,players:[],qIndex:0,questions:[],revealed:false,selected:null,time:20,timer:null,stopIndex:0,showBoard:false,activeStop:null,editStep:0,editQ:null,liveSession:null,liveChannel:null,client:false,clientSession:null,clientPlayer:null,clientAnswered:false,clientMessage:''};
