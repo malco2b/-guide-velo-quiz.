@@ -22,7 +22,9 @@ const NAMES=['Joueur 1','Joueur 2','Joueur 3'];
 function mk(s){return String(s||'').split(/\n+/).map(x=>x.trim()).filter(Boolean).map(name=>({id:uid(),name}))}
 function seed(){const photo=(src,q)=>'';const g=(type,q,ans,o,expl,src,diff)=>({type,q,ans,opts:o||[],pts:1,stake:false,expl:expl||'',src:src||'',diff:diff||1,time:20,image:photo(src,q)});
 const P='Destination Pornic';
-const ROGERE_PHOTO='assets/la-rogere.jpg';
+// The image is kept beside index.html so it works from GitHub Pages and
+// from a simple local web server without requiring an assets/ directory.
+const ROGERE_PHOTO='la-rogere.jpg';
 const st=(name,tell,show,priv,facts,bank)=>{const b=bank||[];if(name.includes('La Rogère'))b.forEach(q=>q.image=ROGERE_PHOTO);return {id:uid(),name,tell,show,priv,facts,game:null,bank:b}};
 return{dark:null,routes:[{id:uid(),name:'Les Moutiers → La Bernerie → Pornic',desc:'Parcours guide du 8 octobre — 5 étapes dans l’ordre du trajet',date:'2026-10-08',time:'14:00',dur:'3h',guide:'',mode:'competition',points:true,settings:{streak:false,speedBonus:false,shuffle:false},players:mk('Joueur 1\nJoueur 2\nJoueur 3\nJoueur 4\nJoueur 5\nJoueur 6\nJoueur 7'),run:null,steps:[
 st('1. Lanterne des morts — Les Moutiers-en-Retz','Monument classé en 1913, haut de 7 m et placé dans l’ancien cimetière. La lanterne possède trois ouvertures et reste encore allumée lors de certaines commémorations.','Observer la tour, ses ouvertures et sa forme.','Faire répondre avant de donner l’explication.',['7 m','Classée en 1913','Trois ouvertures','Toujours utilisée'],[

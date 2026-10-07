@@ -10,7 +10,7 @@ Application du parcours Les Moutiers-en-Retz → La Bernerie-en-Retz → Pornic.
 - Interface joueur séparée de l’interface guide.
 
 ## Photos
-La photo de La Rogère est locale : `assets/la-rogere.jpg`.
+La photo de La Rogère est locale : `la-rogere.jpg`.
 Les anciennes images externes qui ne chargeaient pas ont été retirées pour éviter les photos cassées.
 Les photos peuvent être ajoutées ou remplacées depuis l’éditeur de question.
 
