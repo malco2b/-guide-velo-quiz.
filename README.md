@@ -10,9 +10,16 @@ Application du parcours Les Moutiers-en-Retz → La Bernerie-en-Retz → Pornic.
 - Interface joueur séparée de l’interface guide.
 
 ## Photos
-La photo de La Rogère est locale : `la-rogere.jpg`.
-Les anciennes images externes qui ne chargeaient pas ont été retirées pour éviter les photos cassées.
-Les photos peuvent être ajoutées ou remplacées depuis l’éditeur de question.
+Chaque étape du parcours possède maintenant une photo locale dans `assets/` :
+
+- Lanterne des morts : `assets/lanterne-morts.jpg`
+- La Tenue de Mareil : `assets/tenue-mareil.jpg`
+- Plan d’eau Maurice-Giros : `assets/plan-eau-maurice-giros.webp`
+- La Rogère : `assets/la-rogere.jpg`
+- Château de Pornic : `assets/chateau-pornic.jpg`
+
+Sources et crédits : Wikimedia Commons pour la lanterne et le château ; IntraMuros / La Tenue de Mareil pour la saline ; GO Challans GOis, photo Mélanie Chaigneau, pour le plan d’eau Maurice-Giros.
+Les photos sont stockées dans le dépôt afin de fonctionner aussi sur téléphone et via QR code.
 
 ## Déploiement
 `index.html` doit rester à la racine. Compatible Netlify et GitHub Pages.
